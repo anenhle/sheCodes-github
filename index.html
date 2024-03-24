@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <style>
+        body{
+            background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/07/Weather-Desktop-Picture.jpg");
+            height:100vh;
+            width:100%;
+        }
+        .card {
+            width: 40%;
+            height:  auto;
+            text-align: center;
+            background: rgba(255,255,255,.2);
+            margin-left:370px;
+            margin-top: 50px;
+            padding: 50px;
+        }
+        #input {
+            flex:1;
+            height: 40px;
+            width:280px;
+            padding:20px;
+            font-size: 16px;
+            outline:0;
+            border:none;
+            border-radius: 10px;
+        }
+        #search{
+            cursor: pointer;
+            margin-bottom: -10px;
+        }
+        h2{
+            font-size: 50pt;
+        }
+        #main{
+            height: 80px;
+            width:90px;
+            margin-top:-53px;
+        }
+        .units{
+            padding-top: 40px;
+            width: calc();
+        }
+        span img{
+            height: 50px;
+            width: 40px;
+        }
+        span p{
+            font-size: x-large;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="input">
+            <input type="search" placeholder="Search city..." id="input"/>
+            <img src="https://openclipart.org/image/2400px/svg_to_png/213239/Search-icon.png" width="30px" id="search"/>
+        </div>
+        <div  class="content" id="weatherContent">
+            <h2>Berlin</h2>
+            <img src="https://purepng.com/public/uploads/large/purepng.com-weather-iconsymbolsiconsapple-iosiosios-8-iconsios-8-721522596142qx4ep.png" id="main"/><br>
+            <div class="units">
+                <span class="temp"><img src="https://cdn2.iconfinder.com/data/icons/weather-120/130/_High_Temperature-1024.png" width="30px"/><p>19°C</p></span>
+                <span class="wind"><img src="https://www.dhm.gov.np/assets/frontend/assets/images/warning/Wind.png" width="30px"/><p>12kms</p> </span>
+                <span class="humidity"><img src="https://icon-library.com/images/humidity-icon/humidity-icon-17.jpg" width="30px"/><p>30%</p></span>
+            </div>
+            
+        </div>
+
+    </div>
+</body>
+</html>
